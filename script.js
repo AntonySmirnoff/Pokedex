@@ -4,7 +4,7 @@ var result;
 var attackTypeLabels = [];
 var pokemonsByAttackType = {};
 var lastSelectedLabel;
-window.onload = load();
+document.addEventListener("DOMContentLoaded", load);
 
 function load(){
 	loadMore();
