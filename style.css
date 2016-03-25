@@ -1,0 +1,45 @@
+.header{
+	width: 300px;
+	margin: 20px auto;
+	border: 1px solid black;
+	text-align: center;
+}
+.preview{
+	width: 140px;
+	height: 200px;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	margin: 5px;
+}
+.attack{
+	border-radius: 3px;
+	float: left;
+	margin: 0 5%;
+	width: 40%;
+	text-align: center;
+}
+#infodiv{
+	width: 200px;
+	height: 350px;
+	text-align: center;
+	padding: 10px;
+	position:absolute;	
+}
+#load{
+	width: 80%;
+	margin: 10%;
+}
+#infodiv{
+	width: 200px;
+	margin-top: 70px;
+}
+.attackTypeLabels{
+	border-radius: 3px;
+	float: left;
+	width: 50%;
+	margin: 2px 5%;
+	text-align: center;
+	padding: 1px;
+	border: 1px solid #fff;
+}
