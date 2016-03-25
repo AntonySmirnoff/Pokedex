@@ -6,6 +6,11 @@ var pokemonsByAttackType = {};
 var lastSelectedLabel;
 window.onload = load();
 
+function load(){
+	loadMore();
+	addAllLabel();
+}
+
 function addAllLabel(){
 	var attackTypeLabel = document.createElement('span');
 		attackTypeLabel.innerHTML = 'All';
@@ -16,8 +21,6 @@ function addAllLabel(){
 		attackTypeLabel.onmouseout = unSelectLabel;
 	document.getElementById('attackLabels').appendChild(attackTypeLabel);
 }
-
-addAllLabel();
 
 var offset = $('#infodiv').offset();
 var topPadding = 100;
@@ -46,7 +49,7 @@ function selectLabel(){
 	}
 }
 
-function load(){
+function loadMore(){
 	var request = new XMLHttpRequest();
 	request.open("GET", url, true);
 	request.onreadystatechange = function(){
